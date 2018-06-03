@@ -20,10 +20,10 @@ export default {
     data: Object,
   },
   methods: {
-    setComponent (index) {
-      this.$store.dispatch('SET_SELECTED_COMPONENT_BY_INDEX', index)
-    }
-  }
+    setComponent(index) {
+      this.$store.dispatch('SET_SELECTED_COMPONENT_BY_INDEX', index);
+    },
+  },
 };
 </script>
 

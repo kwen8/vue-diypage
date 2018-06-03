@@ -9,7 +9,7 @@
  *    ...
  * }
  */
-export function registerComponents (components, path) {
+export function registerComponents(components, path) {
   const p = path || 'diypage';
   const newComponents = {};
   components.forEach((c) => {
@@ -20,4 +20,6 @@ export function registerComponents (components, path) {
     };
   });
   return newComponents;
-};
+}
+
+export function a() {}

@@ -20,8 +20,7 @@ export default {
     saveCurrentPage() {},
     async getDiypagesData({ commit, dispatch }, id) {
       const list = await dispatch('getDiypageList');
-      const data = list.filter(page => ~~page.id === ~~id);
-
+      const data = list.filter(page => parseInt(page.id, 0) === parseInt(id, 0));
       commit('STORE_PAGE_DATA', data[0]);
     },
     async getDiypageList() {
@@ -38,14 +37,14 @@ export default {
               params: {
                 data: [
                   {
-                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg'
+                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg',
                   },
                   {
-                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg'
-                  }
-                ]
-              }
-            }
+                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg',
+                  },
+                ],
+              },
+            },
           ],
         },
       ];
