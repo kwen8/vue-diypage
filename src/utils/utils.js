@@ -9,15 +9,15 @@
  *    ...
  * }
  */
-export function registerComponents(components, path) {
-  path = path || "diypage";
+export function registerComponents (components, path) {
+  const p = path || 'diypage';
   const newComponents = {};
-  components.forEach(c => {
-    newComponents[c] = resolve => {
-      import(`@/components/${path}/${c}`).then(b => {
+  components.forEach((c) => {
+    newComponents[c] = (resolve) => {
+      import(`@/components/${p}/${c}`).then((b) => {
         resolve(b);
       });
     };
   });
   return newComponents;
-}
+};

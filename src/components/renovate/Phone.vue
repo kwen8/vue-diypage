@@ -5,17 +5,22 @@
 </template>
 
 <script>
-import DiyPhoneComponent from '@/components/renovate/DiyPhoneComponent'
+import DiyPhoneComponent from '@/components/renovate/DiyPhoneComponent';
+
 export default {
   components: {
-    DiyPhoneComponent
+    DiyPhoneComponent,
   },
   props: {
-    data: Object
-  }
-}
+    data: Object,
+  },
+};
 </script>
 
 <style scoped>
-
+  .phone {
+    width: 375px;
+    min-height: 700px;
+    border: 1px solid #ccc;
+  }
 </style>

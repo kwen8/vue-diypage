@@ -1,12 +1,13 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import diypage from "./modules/diypage";
+import Vue from 'vue';
+import Vuex from 'vuex';
+import diypage from './modules/diypage';
+
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
-    diypage
-  }
+    diypage,
+  },
 });
 
 export default store;

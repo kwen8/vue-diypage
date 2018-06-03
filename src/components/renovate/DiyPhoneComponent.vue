@@ -1,29 +1,35 @@
 <template>
-    <div class="diy-component" :class="{ selected: isSelected }" @mouseenter="onMove" @mouseleave="onMove">
-      <component :is="data.id"></component>
+    <div
+      class="diy-component"
+      :class="{ selected: isSelected }"
+      @mouseenter="onMove"
+      @mouseleave="onMove"
+    >
+      <component :is="data.id" :params="data.params"></component>
     </div>
 </template>
 
 <script>
-import { registerComponents } from '@/utils/utils'
+import { registerComponents } from '@/utils/utils';
+
 export default {
   components: {
-    ...registerComponents(['Slide'])
+    ...registerComponents(['Slide']),
   },
   data() {
     return {
-      isSelected: false
-    }
+      isSelected: false,
+    };
   },
   props: {
-    data: Object
+    data: Object,
   },
   methods: {
     onMove() {
-      this.isSelected = !this.isSelected
-    }
-  }
-}
+      this.isSelected = !this.isSelected;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -38,6 +44,7 @@ export default {
     bottom: 0;
     border: 2px dashed #00a0e9;
     cursor: move;
+    z-index: 10;
   }
 }
 </style>
