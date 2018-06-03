@@ -1,6 +1,11 @@
 <template>
     <div class="phone">
-        <diy-phone-component v-for="(sData, index) in data.data" :data="sData" :key="index"/>
+        <diy-phone-component
+          v-for="(sData, index) in data.data"
+          :data="sData"
+          :key="index"
+          @click="setComponent(index)"
+        />
     </div>
 </template>
 
@@ -14,6 +19,11 @@ export default {
   props: {
     data: Object,
   },
+  methods: {
+    setComponent (index) {
+      this.$store.dispatch('SET_SELECTED_COMPONENT_BY_INDEX', index)
+    }
+  }
 };
 </script>
 
