@@ -4,10 +4,13 @@
         <CarouselItem>
             <div class="demo-carousel">1</div>
         </CarouselItem>
+        <CarouselItem>
+            <div class="demo-carousel">1</div>
+        </CarouselItem>
     </Carousel>
   </div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>

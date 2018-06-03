@@ -71,12 +71,12 @@ export default {
             ]);
           }
         }
-      ]
+      ],
+      pageData: []
     };
   },
   created() {
     this.$store.dispatch("getDiypageList").then(res => {
-      console.log(res);
       this.pageData = res;
     });
   }

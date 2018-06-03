@@ -1,19 +1,19 @@
 <template>
     <div class="phone">
-        <diy-phone-component />
+        <diy-phone-component v-for="(sData, index) in data.data" :data="sData" :key="index"/>
     </div>
 </template>
 
 <script>
-import DiyPhoneComponent from "@/components/renovate/DiyPhoneComponent";
+import DiyPhoneComponent from '@/components/renovate/DiyPhoneComponent'
 export default {
   components: {
     DiyPhoneComponent
   },
   props: {
-    data: Array
+    data: Object
   }
-};
+}
 </script>
 
 <style scoped>
