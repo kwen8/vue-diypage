@@ -8,6 +8,7 @@
 export default {
   data() {
     return {
+      pageData: [],
       columns: [
         {
           title: "页面名称",
@@ -74,7 +75,7 @@ export default {
       ]
     };
   },
-  created() {
+  mounted() {
     this.$store.dispatch("getDiypageList").then(res => {
       console.log(res);
       this.pageData = res;
@@ -84,5 +85,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

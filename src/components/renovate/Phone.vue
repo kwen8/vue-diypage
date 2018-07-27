@@ -11,11 +11,10 @@ export default {
     DiyPhoneComponent
   },
   props: {
-    data: Array
+    data: Object
   }
 };
 </script>
 
 <style scoped>
-
 </style>
