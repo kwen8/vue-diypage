@@ -19,7 +19,7 @@
                             <Icon type="ios-navigate"></Icon>
                             页面设置
                         </template>
-                        <MenuItem name="1-1">自定义页面设置</MenuItem>
+                        <MenuItem name="1-1">diypage</MenuItem>
                     </Submenu>
                 </Menu>
             </Sider>
