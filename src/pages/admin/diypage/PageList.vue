@@ -8,6 +8,7 @@
 export default {
   data() {
     return {
+      pageData: [],
       columns: [
         {
           title: '页面名称',
@@ -82,5 +83,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

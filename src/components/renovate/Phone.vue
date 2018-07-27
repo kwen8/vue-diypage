@@ -23,7 +23,7 @@ export default {
     setComponent(index) {
       this.$store.dispatch('SET_SELECTED_COMPONENT_BY_INDEX', index);
     },
-  },
+  }
 };
 </script>
 
