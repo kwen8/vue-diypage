@@ -14,21 +14,21 @@ import { registerComponents } from '@/utils/utils';
 
 export default {
   components: {
-    ...registerComponents(['Slide']),
+    ...registerComponents(['Slide'])
   },
   data() {
     return {
-      isSelected: false,
+      isSelected: false
     };
   },
   props: {
-    data: Object,
+    data: Object
   },
   methods: {
     onMove() {
       this.isSelected = !this.isSelected;
-    },
-  },
+    }
+  }
 };
 </script>
 

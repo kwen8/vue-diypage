@@ -1,9 +1,9 @@
 export default {
   state: {
-    data: {},
+    data: {}
   },
   getters: {
-    componentsData: state => state.data,
+    componentsData: state => state.data
   },
   mutations: {
     DIYPAGE_ADD_COMPONENT(state, data) {
@@ -14,7 +14,7 @@ export default {
     },
     STORE_PAGE_DATA(state, data) {
       state.data = data;
-    },
+    }
   },
   actions: {
     saveCurrentPage() {},
@@ -37,18 +37,18 @@ export default {
               params: {
                 data: [
                   {
-                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg',
+                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg'
                   },
                   {
-                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg',
-                  },
-                ],
-              },
-            },
-          ],
-        },
+                    url: 'https://img.yzcdn.cn/public_files/2017/09/05/4e3ea0898b1c2c416eec8c11c5360833.jpg'
+                  }
+                ]
+              }
+            }
+          ]
+        }
       ];
       return list;
-    },
-  },
+    }
+  }
 };

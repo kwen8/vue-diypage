@@ -1,10 +1,10 @@
 <template>
-    <div class="renovate">
-      <div class="renovate-area">
-        <phone :data="componentsData"></phone>
-        <diypage-set :data="componentsData"></diypage-set>
-      </div>
+  <div class="renovate">
+    <div class="renovate-area">
+      <phone :data="componentsData"></phone>
+      <diypage-set :data="componentsData"></diypage-set>
     </div>
+  </div>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
   },
   components: {
     Phone,
-    DiypageSet,
+    DiypageSet
   },
   created() {
     const id = this.$route.query.id;
@@ -27,20 +27,21 @@ export default {
   methods: {
     getList() {
       return [];
-    },
+    }
   },
   computed: {
-    ...mapGetters(['componentsData']),
-  },
+    ...mapGetters(['componentsData'])
+  }
 };
 </script>
 
 <style lang="scss">
-  .renovate {
+.renovate {
+  display: flex;
+  justify-content: center;
+  &-area {
     display: flex;
-    justify-content: center;
-    &-area {
-      display: flex;
-    }
+    height: 100%;
   }
+}
 </style>

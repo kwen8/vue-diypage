@@ -6,8 +6,8 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
-    diypage,
-  },
+    diypage
+  }
 });
 
 export default store;

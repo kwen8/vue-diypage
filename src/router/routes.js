@@ -1,7 +1,8 @@
 export const homeRouter = {
+  redirect: '/admin',
   path: '/',
   name: 'home',
-  component: () => import('@/pages/home/Home'),
+  component: () => import('@/pages/home/Home')
 };
 
 export const adminRouters = [
@@ -12,15 +13,15 @@ export const adminRouters = [
       {
         name: 'admin_page_list',
         path: '/',
-        component: () => import('@/pages/admin/diypage/PageList'),
+        component: () => import('@/pages/admin/diypage/PageList')
       },
       {
         name: 'admin_renovate',
         path: 'renovate',
-        component: () => import('@/pages/admin/diypage/Renovate'),
-      },
-    ],
-  },
+        component: () => import('@/pages/admin/diypage/Renovate')
+      }
+    ]
+  }
 ];
 
 export default [homeRouter, ...adminRouters];

@@ -15,8 +15,8 @@ import { Swipe, SwipeItem } from 'vant';
 Vue.use(Swipe).use(SwipeItem);
 export default {
   props: {
-    params: Object,
-  },
+    params: Object
+  }
 };
 </script>
 
